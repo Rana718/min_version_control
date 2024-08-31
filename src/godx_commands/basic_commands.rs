@@ -16,7 +16,7 @@ pub fn all_commands() -> Vec<Command> {
         pull_command(),
         push_command(),
         pop_stash_command(),
-        help_command(),
+        // help_command(),
     ]
 }
 
@@ -81,11 +81,11 @@ pub fn diff_command() -> Command {
         .about("Shows changes between commits, commit and working tree, etc.")
 }
 
-pub fn help_command() -> Command {
-    Command::new("help")
-        .alias("-h")
-        .about("Shows the help message")
-}
+// pub fn help_command() -> Command {
+//     Command::new("help")
+//         .alias("-h")
+//         .about("Shows the help message")
+// }
 
 pub fn init_command() -> Command {
     Command::new("init")
